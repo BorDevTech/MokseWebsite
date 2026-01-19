@@ -20,26 +20,23 @@ export default function ServiceCard({
   imageAlt,
 }: ServiceCardProps) {
   return (
-    <Card.Root maxW={384} minW={342}>
-      <ChakraImage asChild>
-        <Image src={image} alt={imageAlt} width={384} height={285} />
+    <Card.Root maxW={430} minW={342} borderRadius={8} gapY={8} minH={650}>
+      <ChakraImage asChild borderTopRadius={8}>
+        <Image src={image} alt={imageAlt} width={384} height={286} />
       </ChakraImage>
-      <Card.Body>
-        <article>
-          <Icon
-            name={icon}
-            bg={"teal.focusRing"}
-            borderRadius={"lg"}
-            p={4}
-            boxSize={14}
-            position={"absolute"}
-            right={10}
-            top={255}
-          />
-          <Heading as={"h4"}>{title}</Heading>
-          <h4>{title}</h4>
-          <p>{description}</p>
-        </article>
+      <Card.Body height={400}>
+        <Icon
+          name={icon}
+          bg={"teal.focusRing"}
+          borderRadius={"lg"}
+          p={4}
+          boxSize={14}
+          position={"absolute"}
+          right={10}
+          top={255}
+        />
+        <Heading as={"h4"}>{title}</Heading>
+        <Card.Description>{description}</Card.Description>
       </Card.Body>
     </Card.Root>
   );

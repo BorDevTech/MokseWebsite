@@ -16,6 +16,7 @@ import {
   SimpleGrid,
   IconButton,
   Image as ChakraImage,
+  Card,
 } from "@chakra-ui/react";
 import { poppins } from "../../../components/ui/fonts";
 
@@ -47,74 +48,28 @@ export default function Contact() {
               services, volunteer opportunities, and ways to contribute
             </Text>
 
-            <div>
-              {socialLinks.map((link) => (
-                <a
-                  key={link.platform}
-                  href={link.url}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label={`Visit our ${link.platform} page`}
-                >
-                  <Icon name={link.platform} size={10} />
-                  <span>{link.platform}</span>
-                </a>
-              ))}
-            </div>
             <HStack justify={"left"} align={"center"} gap={4}>
               {socialLinks.map((link) => (
-                <IconButton
-                  key={link.url}
-                  variant={"outline"}
-                  border={"lg"}
-                  borderRadius={"full"}
-                  size={"md"}
-                  color={"teal.focusRing"}
-                  aria-label={link.platform}
-                  asChild
-                >
-                  <ChakraLink asChild>
-                    <NextLink
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                    >
-                      <Icon name={link.platform} size={10} />
-
-                      <Icon name={link.platform} size={10} />
-                    </NextLink>
-                  </ChakraLink>
-                </IconButton>
+                <ChakraLink asChild key={link.url}>
+                  <NextLink
+                    href={link.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    <Icon
+                      name={link.platform}
+                      border={"lg"}
+                      borderRadius={"full"}
+                      size={8}
+                      bg={"teal.focusRing"}
+                      borderColor={"teal.focusRing"}
+                      aria-label={`Visit our ${link.platform} page`}
+                    />
+                    <span>{link.platform}</span>
+                  </NextLink>
+                </ChakraLink>
               ))}
             </HStack>
-          </div>
-
-          <main>
-            {/* Get In Touch Section */}
-            <section>
-              <div>
-                <h2>Get in Touch</h2>
-                <p>
-                  We&apos;re here to support you. Reach out to learn more about
-                  our services, volunteer opportunities, and ways to contribute
-                </p>
-                <div>
-                  {socialLinks.map((link) => (
-                    <a
-                      key={link.platform}
-                      href={link.url}
-                      target="_blank"
-                      rel="noopener noreferrer"
-                      aria-label={`Visit our ${link.platform} page`}
-                    >
-                      <Icon name={link.platform} size={10} />
-                      <span>{link.platform}</span>
-                    </a>
-                  ))}
-                </div>
-              </div>
-            </section>
-
             {/* Contact Info Cards Section */}
             <section>
               <div>
@@ -138,27 +93,26 @@ export default function Contact() {
 
             {/* Google Maps Embed Section */}
             <section>
-              <div>
+              <Box asChild width="100%" height="50vh">
                 <iframe
-                  src={mapEmbedUrl}
-                  width="100%"
-                  height="100%"
+                  loading="lazy"
+                  // src={mapEmbedUrl}
                   style={{ border: 0 }}
                   allowFullScreen
-                  loading="lazy"
+                  src="https://maps.google.com/maps?q=497%20Hooksett%20Road%2C%20Suite%20362%2C%20Manchester%2C%20NH%2003104&amp;t=m&amp;z=10&amp;output=embed&amp;iwloc=near"
+                  title="497 Hooksett Road, Suite 362, Manchester, NH 03104"
                   referrerPolicy="no-referrer-when-downgrade"
-                  title="Mokse Office Location"
-                />
-              </div>
-            </section>
-
-            {/* Contact Form Section */}
-            <section>
-              <div>
+                  aria-label="497 Hooksett Road, Suite 362, Manchester, NH 03104"
+                ></iframe>
+              </Box>
+              {/* Contact Form Section */}
+              <section>
                 <ContactForm />
-              </div>
+              </section>
             </section>
-          </main>
+          </div>
+
+          <main></main>
         </PageBuilder>
       ) : (
         <>
