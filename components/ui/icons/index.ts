@@ -22,4 +22,5 @@ export {
   FaHandHoldingHeart,
   FaHandshake,
   FaDonate,
+  FaSearch,
 } from "react-icons/fa";

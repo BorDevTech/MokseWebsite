@@ -26,5 +26,6 @@ export const iconRegistry = {
   HandHoldingHeart: Icons.FaHandHoldingHeart,
   Handshake: Icons.FaHandshake,
   Donate: Icons.FaDonate,
+  Search: Icons.FaSearch,
 };
 export type IconName = keyof typeof iconRegistry;
