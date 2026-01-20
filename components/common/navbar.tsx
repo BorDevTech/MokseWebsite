@@ -86,7 +86,7 @@ export default function Navbar() {
             </ChakraLink>
             <HStack justifyContent={"space-evenly"} spaceX={6} px={8}>
               <ChakraLink asChild>
-                <NextLink href="/about-us">
+                <NextLink href="/about">
                   <Text {...navTextProps}>About</Text>
                 </NextLink>
               </ChakraLink>
@@ -106,7 +106,7 @@ export default function Navbar() {
                 </NextLink>
               </ChakraLink>
               <ChakraLink asChild>
-                <NextLink href="/search">
+                <NextLink href="/resources">
                   <Text {...navTextProps}>Resources</Text>
                 </NextLink>
               </ChakraLink>
