@@ -1,4 +1,4 @@
-//Create a reusable IconButton component that takes in link, platform, url, and icon as props and renders an anchor tag with the provided icon.
+// Create a reusable IconButton component that takes in link, platform, url, and icon as props and renders an anchor tag with the provided icon.
 //  & React.ComponentProps<typeof ChakraIcon>
 
 export default function IconButton({

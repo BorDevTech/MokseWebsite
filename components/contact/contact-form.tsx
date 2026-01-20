@@ -7,9 +7,7 @@ import {
   Container,
   Field,
   Fieldset,
-  For,
   Input,
-  NativeSelect,
   Stack,
   Textarea,
 } from "@chakra-ui/react";

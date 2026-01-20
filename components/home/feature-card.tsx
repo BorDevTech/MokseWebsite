@@ -1,6 +1,5 @@
 "use client";
 
-import type { ReactNode } from "react";
 import { Card, Avatar, Text } from "@chakra-ui/react";
 import { Icon } from "../ui/icons/icon";
 import { poppins } from "../ui/fonts";
