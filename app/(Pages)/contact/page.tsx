@@ -1,30 +1,24 @@
 "use client";
+
 import Image from "next/image";
 import ContactForm from "../../../components/contact/contact-form";
 import { contactInfo, socialLinks, mapEmbedUrl } from "../../../data/contact";
 
 import NextLink from "next/link";
 import {
-  Container,
   Box,
   Text,
-  AbsoluteCenter,
-  VStack,
   HStack,
   Heading,
   Link as ChakraLink,
-  SimpleGrid,
-  IconButton,
   Image as ChakraImage,
-  Card,
 } from "@chakra-ui/react";
-import { poppins } from "../../../components/ui/fonts";
 
 import checkDeviceSize from "@/components/ui/breakpoints";
 import {
   HeaderTemplate,
   PageBuilder,
-} from "../../../components/page-builder/template";
+} from "@/components/page-builder/template";
 import { Icon } from "@/components/ui/icons/icon";
 
 export default function Contact() {
@@ -119,12 +113,14 @@ export default function Contact() {
           <main>
             {/* Hero Section */}
             <section>
-              <Image
-                src="/assets/contact/1500.jpg"
-                alt="Contact Mokse"
-                fill
-                priority
-              />
+              <ChakraImage asChild>
+                <Image
+                  src="/assets/contact/1500.jpg"
+                  alt="Contact Mokse"
+                  fill
+                  priority
+                />
+              </ChakraImage>
               <div>
                 <h1>Contact Us</h1>
                 <p>
