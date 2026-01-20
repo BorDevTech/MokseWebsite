@@ -1,0 +1,100 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "FindTreatment.gov",
+      "url": "https://findtreatment.gov/",
+      "description": "Find treatment facilities in the United States or U.S. Territories for substance abuse/addiction and/or mental health problems.",
+      "region": ["Georgia", "Wisconsin"],
+      "category": ["Healthcare"]
+    },
+    {
+      "id": 2,
+      "title": "CareerOneStop.org",
+      "url": "https://www.careeronestop.org/",
+      "description": "Help finding second chance employers by location",
+      "region": ["Alabama", "California"],
+      "category": ["Hiring Platform", "Second Chance"]
+    },
+    {
+      "id": 3,
+      "title": "HUD Exchange",
+      "url": "https://www.hudexchange.info/",
+      "description": "Housing and homeless shelters by location",
+      "region": ["Louisiana", "Arkansas"],
+      "category": ["Housing"]
+    },
+    {
+      "id": 4,
+      "title": "HireFelons.org",
+      "url": "https://www.hirefelons.org/",
+      "description": "Hiring resources for felons",
+      "region": ["State", "Second State"],
+      "category": ["Hiring Platform", "Second Chance"]
+    },
+    {
+      "id": 5,
+      "title": "SPL Resources for the Formerly Incarcerated",
+      "url": "https://www.spl.org/programs-and-services/civics-and-social-services/resources-for-the-formerly-incarcerated",
+      "description": "Information about resources available to the formerly incarcerated",
+      "region": ["State", "Second State"],
+      "category": ["Healthcare"]
+    },
+    {
+      "id": 6,
+      "title": "Goodwill Industries International",
+      "url": "https://www.goodwill.org/",
+      "description": "Goodwill has re entry jobs and training services",
+      "region": ["State", "Second State"],
+      "category": ["Healthcare"]
+    },
+    {
+      "id": 7,
+      "title": "Salvation Army Resources",
+      "url": "https://www.salvationarmyusa.org/",
+      "description": "Resources",
+      "region": ["State", "Second State"],
+      "category": ["Healthcare"]
+    },
+    {
+      "id": 8,
+      "title": "Food Finder",
+      "url": "https://www.foodfinder.us/",
+      "description": "Resources",
+      "region": ["State", "Second State"],
+      "category": ["Food Assistance"]
+    },
+    {
+      "id": 9,
+      "title": "GeoReentryConnect",
+      "url": "https://georeentryconnect.com/",
+      "description": "General resources by state",
+      "region": ["State", "Second State"],
+      "category": ["Healthcare"]
+    },
+    {
+      "id": 10,
+      "title": "Honest Jobs",
+      "url": "https://www.honestjobs.com/",
+      "description": "Job seekers center for community transitions",
+      "region": ["State", "Second State"],
+      "category": ["Hiring Platform", "Second Chance"]
+    },
+    {
+      "id": 11,
+      "title": "Center for Community Transitions",
+      "url": "https://centerforcommunitytransitions.org/",
+      "description": "Center for Community Transitions",
+      "region": ["State", "Second State"],
+      "category": ["Healthcare"]
+    },
+    {
+      "id": 12,
+      "title": "Indeed.com",
+      "url": "https://www.indeed.com/",
+      "description": "Job search",
+      "region": ["State", "Second State"],
+      "category": ["Hiring Platform"]
+    }
+  ]
+}

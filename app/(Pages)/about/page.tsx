@@ -1,7 +1,7 @@
 "use client"
 import NextImage from 'next/image';
 import TeamMemberCard from '../../../components/about/team-member-card';
-import { GemIcon } from '@/components/ui/icons';
+// import { GemIcon } from '@/components/ui/icons';
 import { executiveBoard, teamMembers } from '../../../data/team';
 import {
   Container, Box, Text, AbsoluteCenter, VStack, HStack, Heading,
@@ -10,6 +10,7 @@ import {
 import { poppins } from '../../../components/ui/fonts';
 import NextLink from 'next/link';
 import checkDeviceSize from '../../../components/ui/breakpoints';
+import { Icon } from '@/components/ui/icons/icon';
 
 export default function AboutUs() {
 
@@ -58,7 +59,8 @@ export default function AboutUs() {
           <Container as={'main'} maxW={'7xl'} h={"100%"}>
             <HStack as={"section"}>
               <article>
-                <GemIcon />
+                <Icon name={"Gem"}/>
+                {/* <GemIcon /> */}
                 <Box>
                   <Heading as="h3">Vision</Heading>
                   <Text>
@@ -70,7 +72,7 @@ export default function AboutUs() {
               </article>
 
               <article>
-                <GemIcon />
+                <Icon name={"Gem"}/>
                 <Box>
                   <Heading as="h3">Mission</Heading>
                   <Text>

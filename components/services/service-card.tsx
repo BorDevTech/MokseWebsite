@@ -1,7 +1,11 @@
-import Image from 'next/image';
+"use client";
+import Image from "next/image";
+import { IconName } from "../ui/icons/icon-registry";
+import { Icon } from "../ui/icons/icon";
+import { Card, Image as ChakraImage, Heading } from "@chakra-ui/react";
 
 interface ServiceCardProps {
-  icon: React.ComponentType;
+  icon: IconName;
   title: string;
   description: string;
   image: string;
@@ -9,18 +13,31 @@ interface ServiceCardProps {
 }
 
 export default function ServiceCard({
-  icon: Icon,
+  icon,
   title,
   description,
   image,
   imageAlt,
 }: ServiceCardProps) {
   return (
-    <article>
-      <Icon />
-      <h4>{title}</h4>
-      <p>{description}</p>
-      <Image src={image} alt={imageAlt} width={400} height={300} />
-    </article>
+    <Card.Root maxW={430} minW={342} borderRadius={8} gapY={8} minH={650}>
+      <ChakraImage asChild borderTopRadius={8}>
+        <Image src={image} alt={imageAlt} width={384} height={286} />
+      </ChakraImage>
+      <Card.Body height={400}>
+        <Icon
+          name={icon}
+          bg={"teal.focusRing"}
+          borderRadius={"lg"}
+          p={4}
+          boxSize={14}
+          position={"absolute"}
+          right={10}
+          top={255}
+        />
+        <Heading as={"h4"}>{title}</Heading>
+        <Card.Description>{description}</Card.Description>
+      </Card.Body>
+    </Card.Root>
   );
 }
