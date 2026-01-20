@@ -18,7 +18,6 @@ import {
   ScrollArea,
 } from "@chakra-ui/react";
 import { useRef, useState } from "react";
-import { poppins } from "@/components/ui/fonts";
 import checkDeviceSize from "@/components/ui/breakpoints";
 import mockData from "@/app/(Pages)/resources/mock.json";
 
