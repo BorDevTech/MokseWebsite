@@ -18,7 +18,6 @@ import {
   Image as ChakraImage,
   Card,
 } from "@chakra-ui/react";
-import { poppins } from "../../../components/ui/fonts";
 
 import checkDeviceSize from "@/components/ui/breakpoints";
 import {
