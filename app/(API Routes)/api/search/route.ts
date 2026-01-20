@@ -4,5 +4,9 @@
 UPDATE resource file via vercel blob storage for source of truth  
 USING os path to dynamically read files from vercel blob storage
 */
-// 
 //
+//
+// Dynamic State resource route
+export function GET() {
+  return new Response("Catch all search route");
+}
