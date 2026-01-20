@@ -202,7 +202,7 @@ export default function Contact() {
                 <ContactForm />
               </div>
             </section>
-          </main>{" "}
+          </main>
           )
         </>
       )}
