@@ -1,5 +1,3 @@
-import { Handshake, HandHeart } from "lucide-react";
-import type { ReactNode } from "react";
 import { IconName } from "@/components/ui/icons/icon-registry";
 
 export type Feature = {
