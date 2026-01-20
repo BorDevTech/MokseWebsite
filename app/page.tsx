@@ -391,39 +391,6 @@ export default function Home() {
               ))}
             </Center>
           </Box>
-          {/* <Box>
-              <img src="/Image-1-1.jpg" alt="College students" />
-              <h3>Make a Difference – Get Involved!</h3>
-              <p>Are you passionate about helping justice-impacted inBoxiduals?
-                We need compassionate volunteers to assist in various roles, including
-                mentorship, tutoring, and administrative support.</p>
-              <button>Get Involved</button>
-            </Box>
-            <Box>
-              <Box>
-                {getInvolved.map((f) => (
-                  <FeatureCard key={f.title} {...f} />
-                ))}
-              </Box>
-              <button>Donate</button>
-            </Box>
-            <Box>
-              <h2>special story: The Three Words That Change My Life.</h2>
-              <p>Mokse is proud to share the TEDx talk of Dr. Matthews.</p>
-              <Box>
-                <iframe src="https://www.youtube.com/embed/p2q--KoXnXA" frameBorder="0"></iframe>
-              </Box>
-            </Box>
-            <Box>
-              <img src="IMG_0997-1-1024x683.webp" alt="" />
-              <img src="IMG_1004-1024x683.webp" alt="" />
-            </Box>
-            <Box>
-              <img src="IMG_1011-300x300.webp" alt="" />
-              <img src="IMG_1012-300x300.webp" alt="" />
-              <img src="IMG_1027-300x300.webp" alt="" />
-              <img src="IMG_0995-300x300.webp" alt="" />
-            </Box> */}
         </VStack>
       )}
     </>
