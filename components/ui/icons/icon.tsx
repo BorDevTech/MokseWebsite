@@ -1,8 +1,8 @@
 "use client";
-import { iconRegistry } from "./icon-registry";
+import { iconRegistry, IconName } from "./icon-registry";
 import { Icon as ChakraIcon } from "@chakra-ui/react";
 
-export type IconName = keyof typeof iconRegistry;
+// export type IconName = keyof typeof iconRegistry;
 
 type IconProps = {
   name: IconName;
