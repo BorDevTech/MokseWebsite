@@ -24,7 +24,6 @@ import { Icon } from "@/components/ui/icons/icon";
 import {
   HeaderTemplate,
   PageBuilder,
-  SectionTemplate,
 } from "@/components/page-builder/template";
 
 type BlogPost = {
