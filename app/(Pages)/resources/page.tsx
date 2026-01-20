@@ -19,7 +19,6 @@ import {
 } from "@chakra-ui/react";
 import { useRef, useState } from "react";
 import checkDeviceSize from "@/components/ui/breakpoints";
-import mockData from "@/app/(Pages)/resources/mock.json";
 
 import { Icon } from "@/components/ui/icons/icon";
 import {
