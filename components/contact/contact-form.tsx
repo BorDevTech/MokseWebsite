@@ -35,7 +35,6 @@ export default function ContactForm() {
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
   const submitToasterId = "contact-form-submission";
-  const [showToast, setShowToast] = useState(false);
   const [toastMessage, setToastMessage] = useState({
     error: () => "",
     loading: () =>

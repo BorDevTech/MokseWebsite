@@ -1,4 +1,4 @@
-import { IconName } from "@/components/ui/icons/icon-registry";
+import type { IconName } from "@/components/ui/icons/icon-registry";
 
 export type Feature = {
   icon: IconName;
