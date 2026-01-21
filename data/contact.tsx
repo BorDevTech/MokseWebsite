@@ -16,7 +16,7 @@ export const contactInfo: ContactInfo[] = [
   {
     icon: "MapPin",
     label: "Mailing Address",
-    value: "geo:0,0?q=497+Hooksett+Road,Suite+362,Manchester+NH,03104",
+    value: "497 Hooksett Road,Suite 362,Manchester NH,03104",
   },
   {
     icon: "Phone",

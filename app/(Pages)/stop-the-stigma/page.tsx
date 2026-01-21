@@ -193,7 +193,7 @@ export default function StopTheStigma() {
           }
           icon={"ObjectGroup"}
         />
-        <section
+        {/* <section
           className="elementor-section elementor-top-section elementor-element elementor-element-ln1z48d elementor-section-full_width elementor-section-content-middle elementor-section-height-default elementor-section-height-default"
           data-id="ln1z48d"
           data-element_type="section"
@@ -307,7 +307,7 @@ export default function StopTheStigma() {
               </div>
             </div>
           </div>
-        </section>
+        </section> */}
       </PageBuilder>
     </>
   );

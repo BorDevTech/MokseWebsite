@@ -1,4 +1,4 @@
-import { IconName } from "../ui/icons/icon";
+import type { IconName } from "../ui/icons/icon-registry";
 import { Icon } from "../ui/icons/icon";
 
 interface SupportCardProps {
