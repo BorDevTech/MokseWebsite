@@ -14,6 +14,7 @@ export interface SupportOption {
 }
 
 export interface FaqItem {
+  index: string;
   question: string;
   answer: string;
 }
@@ -62,21 +63,25 @@ export const supportOptions: SupportOption[] = [
 
 export const faqItems: FaqItem[] = [
   {
+    index: "0",
     question: "What is the vision of Mokse?",
     answer:
       "Mokse envisions a society where all individuals have equal opportunities to thrive, learn, and lead, free from the stigma and limitations associated with their pasts. We believe in empowering individuals to contribute positively to their communities.",
   },
   {
+    index: "1",
     question: "How can I get involved with Mokse?",
     answer:
       "There are several ways to get involved, including volunteering, attending our events, or supporting our programs. For additional information on volunteering email: volunteers@mokse.org.",
   },
   {
+    index: "2",
     question: "How does Mokse support formerly incarcerated individuals?",
     answer:
       "Mokse provides accessible education, entrepreneurial support, and empowerment resources designed to transform the lives of formerly incarcerated individuals, helping them achieve personal and professional growth.",
   },
   {
+    index: "3",
     question: "Where can I find more information about upcoming events?",
     answer:
       "You can find details about our upcoming events, including the Stop the Stigma Conference, on our website. We regularly update it with new information on conferences, workshops, and community initiatives.",

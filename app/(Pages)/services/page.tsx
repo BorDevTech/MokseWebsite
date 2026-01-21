@@ -1,28 +1,10 @@
 import Image from "next/image";
 import NextLink from "next/link";
-import Navbar from "../../../components/common/navbar";
-import Footer from "../../../components/common/footer";
 import ServiceCard from "../../../components/services/service-card";
 import SupportCard from "../../../components/services/support-card";
 import FaqItem from "../../../components/services/faq-item";
 import { services, supportOptions, faqItems } from "../../../data/services";
-import {
-  Container,
-  Box,
-  Text,
-  Button,
-  AbsoluteCenter,
-  VStack,
-  HStack,
-  Heading,
-  Link as ChakraLink,
-  Center,
-  SimpleGrid,
-  GridItem,
-  Stack,
-  Card,
-  Image as ChakraImage,
-} from "@chakra-ui/react";
+import { Link as ChakraLink, SimpleGrid } from "@chakra-ui/react";
 import {
   HeaderTemplate,
   PageBuilder,
@@ -95,15 +77,7 @@ export default function Services() {
               </NextLink>
             </ChakraLink>
           </section>
-          <section>
-            <p>Find Out How MoKse Supports Change</p>
-            <h2>Frequently Asked Questions</h2>
-            <div>
-              {faqItems.map((item) => (
-                <FaqItem key={item.question} {...item} />
-              ))}
-            </div>
-          </section>
+          <FaqItem />
         </BodyTemplate>
       </PageBuilder>
     </>

@@ -1,19 +1,12 @@
 import {
-  useBreakpointValue,
   Container,
   Box,
   Text,
   Stack,
-  Button,
   AbsoluteCenter,
   VStack,
   Heading,
-  Link as ChakraLink,
-  Center,
   SimpleGrid,
-  GridItem,
-  Card,
-  Image as ChakraImage,
 } from "@chakra-ui/react";
 import { poppins } from "../ui/fonts";
 
@@ -97,7 +90,7 @@ export function SectionTemplate({
 }) {
   return (
     <>
-      <Container direction={direction}>
+      <Container direction={direction} fluid>
         <Heading as="h2">
           <Text
             textStyle={"5xl"}

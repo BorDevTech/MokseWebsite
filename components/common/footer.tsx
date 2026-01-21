@@ -45,10 +45,11 @@ export default function Footer() {
               <Box>
                 <Image asChild>
                   <NextImage
-                    src={useColorModeValue(
-                      "/mokse-logo.png",
-                      "/MOKSE-3-180x46.png"
-                    )}
+                    src={
+                      colorMode == "light"
+                        ? "/mokse-logo.png"
+                        : "/MOKSE-3-180x46.png"
+                    }
                     alt="MOKSE Logo"
                     width={200}
                     height={51}
