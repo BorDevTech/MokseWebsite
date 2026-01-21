@@ -95,6 +95,14 @@
       "description": "Job search",
       "region": ["State", "Second State"],
       "category": ["Hiring Platform"]
+    },
+    {
+      "id": 13,
+      "title": "",
+      "url": "https://www.google.com",
+      "description": "Example Description",
+      "region": ["State", "Second State"],
+      "category": ["Substance Abuse", "Mental Health"]
     }
   ]
 }
