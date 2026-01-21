@@ -27,5 +27,8 @@ export const iconRegistry = {
   Handshake: Icons.FaHandshake,
   Donate: Icons.FaDonate,
   Search: Icons.FaSearch,
+  Keyboard: Icons.FaKeyboard,
+  ListAlt: Icons.FaListAlt,
+  ObjectGroup: Icons.FaObjectGroup,
 };
 export type IconName = keyof typeof iconRegistry;

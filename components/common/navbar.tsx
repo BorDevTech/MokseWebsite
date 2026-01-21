@@ -27,8 +27,12 @@ export default function Navbar() {
   const [isFixed, setIsFixed] = useState(false);
 
   // Mount check for screen size check
+  const runMountCheck = () => {
+    if (typeof window !== "undefined") {
+      setIsMounted(true);
+    }}
   useEffect(() => {
-    setIsMounted(true);
+    runMountCheck();
   }, []);
 
   // Check device scroll position for navbar position

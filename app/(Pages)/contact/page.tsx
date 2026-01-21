@@ -10,8 +10,10 @@ import {
   Text,
   HStack,
   Heading,
+  Card,
   Link as ChakraLink,
   Image as ChakraImage,
+  Avatar,
 } from "@chakra-ui/react";
 
 import checkDeviceSize from "@/components/ui/breakpoints";
@@ -20,6 +22,7 @@ import {
   PageBuilder,
 } from "@/components/page-builder/template";
 import { Icon } from "@/components/ui/icons/icon";
+import { poppins } from "@/components/ui/fonts";
 
 export default function Contact() {
   const notMobileDevice = checkDeviceSize();
@@ -65,25 +68,34 @@ export default function Contact() {
               ))}
             </HStack>
             {/* Contact Info Cards Section */}
-            <section>
-              <div>
-                {contactInfo.map((info) => {
-                  const content = info.href ? (
-                    <a href={info.href}>{info.value}</a>
-                  ) : (
-                    <p>{info.value}</p>
-                  );
+            <HStack>
+              {contactInfo.map((info) => {
+                const content = info.href ? (
+                  <a href={info.href}>{info.value}</a>
+                ) : (
+                  <Text>{info.value}</Text>
+                );
 
-                  return (
-                    <article key={info.label}>
-                      <div>{info.icon}</div>
-                      <h4>{info.label}</h4>
-                      {content}
-                    </article>
-                  );
-                })}
-              </div>
-            </section>
+                return (
+                  <Card.Root
+                    key={info.label}
+                    variant="outline"
+                    w={"sm"}
+                    h={"xs"}
+                  >
+                    <Card.Body>
+                      <Avatar.Root my={4} boxSize={12}>
+                        <Icon name={info.icon} size={6} />
+                      </Avatar.Root>
+                      <Card.Title className={poppins.className}>
+                        {info.label}
+                      </Card.Title>
+                      <ChakraLink href={info.href}>{info.value}</ChakraLink>
+                    </Card.Body>
+                  </Card.Root>
+                );
+              })}
+            </HStack>
 
             {/* Google Maps Embed Section */}
             <section>

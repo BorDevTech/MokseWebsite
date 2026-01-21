@@ -23,4 +23,7 @@ export {
   FaHandshake,
   FaDonate,
   FaSearch,
+  FaKeyboard,
+  FaListAlt,
+  FaObjectGroup,
 } from "react-icons/fa";
