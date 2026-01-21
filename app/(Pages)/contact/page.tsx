@@ -178,7 +178,7 @@ export default function Contact() {
                   );
 
                   return (
-                    <article key={info.label}>
+                    <article key={info.label}>hello
                       <div>{info.icon}</div>
                       <h4>{info.label}</h4>
                       {content}
